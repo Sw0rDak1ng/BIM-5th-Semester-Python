@@ -8,6 +8,9 @@ class person:
     def __gt__(self,other):
         return self.age>other.age
     
+    def __str__(self):
+        return f'name:{self.name} age:{self.age}'
+    
 p1=person('Ram',20)
 p2=person('hari',21)
 if p1>p2:
